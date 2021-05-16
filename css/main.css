@@ -1,0 +1,546 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../img/back.png");
+  background-size: cover;
+}
+
+.path {
+  background-image: url("../img/Path 2@3x.png");
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
+.cont {
+  width: 80%;
+  margin: auto;
+}
+
+#head {
+  height: 161px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  margin: 0;
+}
+
+#head .hMain {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 161px;
+}
+
+#head .hMain .hLogo {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+
+#head .hMain .hUser {
+  height: 100px;
+  width: 244px;
+  border: 1px solid #efefef;
+  -webkit-box-shadow: 0px 0px 20px 2px #efefef;
+          box-shadow: 0px 0px 20px 2px #efefef;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  position: relative;
+}
+
+#head .hMain .hUser .h_u_Info {
+  position: absolute;
+  right: 50%;
+  color: #676767;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+#head .hMain .hUser .h_u_Info span {
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#head .hMain .hUser .h_u_Info span:hover {
+  color: #363636;
+}
+
+#head .hMain .hUser .h_u_Info p {
+  padding-top: 10px;
+  color: #fda9b1;
+  cursor: pointer;
+}
+
+#head .hMain .hUser .h_u_Avatar {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  width: 80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -20px;
+}
+
+#head .hMain .hUser .h_u_Avatar img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#head .hMain .hUser .h_u_Avatar img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#main {
+  padding: 20px 0;
+}
+
+#main .Rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#main .Rooms .rSidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 27%;
+}
+
+#main .Rooms .rSidebar div {
+  margin: 5px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px -5px #707070;
+          box-shadow: 0px 0px 10px -5px #707070;
+  padding: 30px 0 30px 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  color: #8c8c8c;
+  font-size: 21px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#main .Rooms .rSidebar div span {
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+#main .Rooms .rSidebar .rWelcome {
+  margin: 10px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: url("../img/hands-holding-word-welcome@3x.png");
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  height: 83px;
+}
+.r_Rooms,.r_Library,.r_Grammy,.r_Teachers,.r_Live {
+  height: 80px;
+}
+
+#main .Rooms .rSidebar .active {
+  background-color: #8c8c8c;
+  color: #ffffff;
+}
+
+#main .Rooms .rMain {
+  width: 70%;
+  padding: 10px 0 0 30px;
+}
+
+#main .Rooms .rMain .r_m_Title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+#main .Rooms .rMain .r_m_Title .movcud {
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+#main .Rooms .rMain .alt_div {
+  overflow: hidden;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: #3a3a3a;
+  -webkit-box-align: center;
+  border: none;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.r_act,.r_mentor{
+  height: 80px !important;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu div {
+  width: 30%;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 20px 0 20px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  -webkit-box-shadow: 0px 0px 20px -10px #707070;
+          box-shadow: 0px 0px 20px -10px #707070;
+  margin-right: 20px;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu div p {
+  padding-left: 10px;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu div img {
+  width: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_chat {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 80px;
+  cursor: pointer;
+  
+  z-index: 2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.r_chat,.r_mentor svg{
+  height: 45px;
+}
+#main .Rooms .rMain .alt_div .r_m_Menu .r_chat:hover {
+  background-color: white;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_chat svg #Path_81 {
+  fill: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_chat svg #Path_82 {
+  fill: #58c2ff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor:hover {
+  background-color: white;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor svg #Path_83 {
+  fill: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor svg #Path_84 {
+  fill: #8c8c8c;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor svg #Path_85 {
+  fill: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor svg #Path_86 {
+  fill: #58c2ff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_mentor svg #Path_87 {
+  fill: #58c2ff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act {
+  background-color: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_81 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_82 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_83 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_84 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_85 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_86 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act svg #Path_87 {
+  fill: #ffff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_81 {
+  fill: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_82 {
+  fill: #58c2ff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_83 {
+  fill: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_84 {
+  fill: #8c8c8c;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_85 {
+  fill: #ff6978;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_86 {
+  fill: #58c2ff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_act:hover svg #Path_87 {
+  fill: #58c2ff;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_add {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 0 !important;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  font-size: 80px;
+  color: #8c8c8c;
+  margin-left: 10px;
+}
+
+#main .Rooms .rMain .alt_div .r_m_Menu .r_add:hover {
+  background-color: #ffffff;
+}
+
+
+
+#main .Rooms .rMain .r_m_List {
+  width: 100%;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#main .Rooms .rMain .r_m_List .l_Head {
+  width: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#main .Rooms .rMain .r_m_List .l_Head .lh_chl {
+  text-align: center;
+  width: 18%;
+}
+
+#main .Rooms .rMain .r_m_List .l_Head .lh_chl:first-child {
+  width: 12%;
+}
+
+#main .Rooms .rMain .r_m_List .l_Head .lh_chl:nth-child(3) {
+  width: 16%;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_main {
+  width: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px -10px #707070;
+          box-shadow: 0px 0px 20px -10px #707070;
+  z-index: 3;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_main .ld_chl {
+  text-align: center;
+  padding: 5px 0;
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_main .ld_chl ._avatar {
+  width: 80%;
+  margin: auto;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_main .ld_chl ._avatar img.img_avatar {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_main .ld_chl:first-child {
+  width: 12%;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_main .ld_chl:nth-child(3) {
+  width: 16%;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .ld_extra {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px -10px #707070;
+          box-shadow: 0px 0px 20px -10px #707070;
+  z-index: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#main .Rooms .rMain .r_m_List .l_Data .lde_pas svg {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+/*# sourceMappingURL=main.css.map */
